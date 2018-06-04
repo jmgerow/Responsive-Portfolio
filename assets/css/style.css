@@ -221,37 +221,31 @@ input[type=submit] {
 
 
 @media screen and (max-width: 980px) {
-  /* The body's bg color will be #333 */
-  body {
-    
-    color: red;
+  
+
+  .container {
+    width: 95%;
   }
 
-  /* The wrapper's width will be 600px */
   .wrapper {
-    width: 960px;
+    width: auto;
   }
 }
 @media screen and (max-width: 768px) {
-  /* The body's bg color will be #333 */
-  body {
-    
-    color: blue;
+
+  
+  .container {
+    width: 95%;
   }
 
-  /* The wrapper's width will be 600px */
   .wrapper {
-    width: 768px;
+    width: auto;
   }
 }
 
 @media screen and (max-width: 640px) {
   /* The body's bg color will be #333 */
-  body {
-    
-    color: purple;
-  }
-
+ 
   #masthead {
     position: static;
     z-index: 99;
@@ -268,9 +262,14 @@ input[type=submit] {
     text-align: center;
   }
 
+  .container {
+    width: 100%;
+  }
+
   #main-container {
     padding-top: 10px;
     min-height: calc(100vh - 70px);
+    overflow: none;
   }
 
   .auth-image {
@@ -281,8 +280,28 @@ input[type=submit] {
     margin-right: 25px;
   }
 
-  /* The wrapper's width will be 600px */
+ 
+  .main-section {
+    clear: both;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin: 0 0 40px;
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+ 
+  .work {
+    position: relative;
+    clear: both;
+    width: 100%;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+  
+  
   .wrapper {
-    width: 640px;
+    width: auto;
   }
 }
